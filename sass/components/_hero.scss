@@ -1,46 +1,45 @@
-
 /* Секція герой hero */
 
 .hero {
-    max-width: 1600px;
-    min-height: 600px;
-    padding: 200px 0;
-    margin: 0 auto;
-    background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image.jpg);
-    background-color: var(--bg-footer-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  max-width: 1600px;
+  min-height: 600px;
+  padding: 200px 0;
+  margin: 0 auto;
+  background-image: linear-gradient(var(--gradient), var(--gradient)), url(../images/background-image.jpg);
+  background-color: var(--bg-footer-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   }
   
   .hero__wrap {
-    width: 696px;
-    margin: 0 auto;
+  width: 696px;
+  margin: 0 auto;
   }
   
   .hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
   }
   
   .hero__button {
-    display: block;
-    padding: 10px 32px;
-    margin: 30px auto 0 auto;
-    border: 0;
-    font-family: Roboto, Verdana, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    box-shadow: 0px 4px 4px var(--shadow);
-    border-radius: 4px;
-    cursor: pointer;
+  display: block;
+  padding: 10px 32px;
+  margin: 30px auto 0 auto;
+  border: 0;
+  font-family: Roboto, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px var(--shadow);
+  border-radius: 4px;
+  cursor: pointer;
   }

@@ -4,56 +4,53 @@
   max-width: 1600px;
   margin: 0 auto;
   border-bottom: 1px solid var(--border-bottom);
-}
-
-.header-container {
+  }
+  
+  .header-container {
   display: flex;
-}
-
-/* Логотип компанії Logo */
-
-.logo {
-display: block;
-padding: 24px 0;
-color: var(--accent-color);
-font-family: Raleway, Verdana,
+  }
+  
+  /* Логотип компанії Logo */
+  
+  .logo {
+  display: block;
+  padding: 24px 0;
+  color: var(--accent-color);
+  font-family: Raleway, Verdana,
         sans-serif;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-text-decoration: none;
-}
-
-.header__decor {
-color: var(--black-color);
-
-
-}
-
-.header__wrap {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  }
+  
+  .header__decor {
+  color: var(--black-color);
+  
+  
+  }
+  
+  .header__wrap {
     display: flex;
     align-items: center;
     }
-
-
-
-
-/* Меню NAV */
-
-.nav {
+  
+  /* Меню NAV */
+  
+  .nav {
   margin-left: 93px;
-}
-
-.nav__list {
+  }
+  
+  .nav__list {
   display: flex;
-}
-
-.nav__item + .nav__item {
+  }
+  
+  .nav__item + .nav__item {
   margin-left: 50px;
-}
-
-.nav__link {
+  }
+  
+  .nav__link {
   position: relative;
   display: inline-block;
   padding: 32px 0 32px;
@@ -63,9 +60,9 @@ color: var(--black-color);
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   transition: color 250ms var(--timing-function);
-}
-
-.nav__link::after {
+  }
+  
+  .nav__link::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -77,36 +74,36 @@ color: var(--black-color);
   transform: scaleX(0);
   transition: transform 250ms var(--timing-function);
    }
-
-.nav__link:hover::after,
-.nav__link:focus::after {
+  
+  .nav__link:hover::after,
+  .nav__link:focus::after {
   transform: scaleX(1);
        /* width: 100%;
        left: 0; */
-}
+  }
     
-.nav__link--current::after {
+  .nav__link--current::after {
     transform: scaleX(1);
     /* width: 100%; */
-}
-
-.nav__link--current {
+  }
+  
+  .nav__link--current {
   color: var(--accent-color); 
-}
-
-
-.nav__link:hover,
-.nav__link:focus {
+  }
+  
+  
+  .nav__link:hover,
+  .nav__link:focus {
   color: var(--accent-color);
-}
-
-/* Контакти link */
-
-.contacts {
+  }
+  
+  /* Контакти link */
+  
+  .contacts {
   margin: auto 0 auto auto;
-}
-
-.contacts__link {
+  }
+  
+  .contacts__link {
   display: flex;
   padding: 24px 0;
   font-weight: 500;
@@ -118,22 +115,23 @@ color: var(--black-color);
   fill: currentColor;
   transition: color 250ms var(--timing-function), 
   fill 250ms var(--timing-function);;
-}
-
-.contacts__link:hover,
-.contacts__link:focus {
+  }
+  
+  .contacts__link:hover,
+  .contacts__link:focus {
   color: var(--accent-color);
   fill: currentColor;
-}
-
-.contacts__list {
+  }
+  
+  .contacts__list {
   display: flex; 
-}
-
-.contacts__item + .contacts__item {
+  }
+  
+  .contacts__item + .contacts__item {
   margin-left: 50px; 
-}
-
-.contacts__icon {
+  }
+  
+  .contacts__icon {
   margin: auto 10px auto auto;
-}
+  }
+  

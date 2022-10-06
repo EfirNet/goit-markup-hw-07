@@ -1,39 +1,5 @@
 {
     "recommendations": [],
-    // "editor.renderWhitespace": "all"
-    // "editor.renderWhitespace": "trailing"
-    // "editor.renderWhitespace": "selection"
-    // "workbench.colorCustomizations": {    
-//   "editorWhitespace.foreground": "#fbff00"
-// }
-
-
-
-
-// {
-//     "liveSassCompile.settings.formats":[
-//        {
-//            "format": "expanded",
-//            "extensionName": ".css",
-//            "savePath": "/css"
-//        },
-//        {
-//            "extensionName": ".min.css",
-//            "format": "compressed",
-//            "savePath": "/css"
-//        }
-//    ],
-//    "liveSassCompile.settings.excludeList": [
-//       "**/node_modules/**",
-//       ".vscode/**"
-//    ],
-//    "liveSassCompile.settings.generateMap": true,
-//    "liveSassCompile.settings.autoprefix": [
-//        "defaults"
-//    ]
-// }
-
-
 "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.formats": [
     {

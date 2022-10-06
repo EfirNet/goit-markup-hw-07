@@ -1,48 +1,47 @@
-
 /* Секція Постійні кліенти сlients */
 
 .сlients {
-    padding: 94px 0;
-    margin: 0 auto;
+  padding: 94px 0;
+  margin: 0 auto;
   }
   
   .сlients__title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
   }
   
   .сlients__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
   
   .сlients__item:not(:last-child) {
-    margin-right: 30px;
+  margin-right: 30px;
   }
   
   .сlients__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid currentColor;
-    border-radius: 4px;
-    color: var(--borders);
-    fill: currentColor;
-    transition: border-color 250ms var(--timing-function), 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: var(--borders);
+  fill: currentColor;
+  transition: border-color 250ms var(--timing-function), 
   fill 250ms var(--timing-function);
   }
   
   .сlients__link:hover,
   .сlients__link:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
   }
   
