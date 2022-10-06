@@ -5,14 +5,8 @@
   margin: 0 auto;
   }
   
-  .сlients__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
+.clients__title {
+  @extend %title;
   }
   
   .сlients__list {
@@ -37,11 +31,12 @@
   fill: currentColor;
   transition: border-color 250ms var(--timing-function), 
   fill 250ms var(--timing-function);
+    &:focus,
+    &:hover {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
   }
+}
   
-  .сlients__link:hover,
-  .сlients__link:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-  }
+  
   

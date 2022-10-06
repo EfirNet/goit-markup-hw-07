@@ -3,29 +3,23 @@
 .about {
   padding: 94px 0;
   }
-  
-  .about__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
+ 
+.about__title{
+  @extend %title;
   }
-  
+
   .about__list {
   display: flex;
   }
   
   .about__item {
     position: relative;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
   }
   
-  .about__item:not(:last-child) {
-    margin-right: 30px;
-  }
-  
+ 
   .about__subtitle {
     position: absolute;
     bottom: 0;

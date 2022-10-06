@@ -67,20 +67,15 @@
   border-radius: 50%;
   background-color: var(--background);
   transition: background-color 250ms var(--timing-function);
+    &:focus,
+    &:hover {
+      background-color: var(--accent-color);
+      }
   }
-  
-  .social__link:hover,
-  .social__link:focus {
-  background-color: var(--accent-color);
-  }
-  
+   
   .social__icon {
   fill: var(--white-color);
   }
-  
-  /* .social__item + .social__item {
-    margin-left: 10px;
-  } */
   
   /* Підписка - Підпишіться на розсилку subscribe */
   
@@ -102,35 +97,21 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   transition: background 250ms var(--timing-function);
-  }
-  
-  .subscribe__input:focus {
-    background: linear-gradient(
-        0deg, 
-    rgba(33, 150, 243, 0), 
-    rgba(33, 150, 243, 0)),
-    linear-gradient(
-        0deg, 
-    rgba(255, 255, 255, 0.3), 
-    rgba(255, 255, 255, 0.3));
+    &:focus {
+      background: linear-gradient(
+          0deg, 
+      rgba(33, 150, 243, 0), 
+      rgba(33, 150, 243, 0)),
+      linear-gradient(
+          0deg, 
+      rgba(255, 255, 255, 0.3), 
+      rgba(255, 255, 255, 0.3));
+    }
   }
   
   .subscribe__button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 28px;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-  fill: currentColor;
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-  cursor: pointer; 
+    @extend %button;
+    justify-content: space-between;
+    padding: 0 28px;
+    fill: currentColor;
   }
