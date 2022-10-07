@@ -17,10 +17,9 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  }
-  
-  .backdrop--is-hidden .backdrop__modal {
-  transform: translate(-50%, -50%) scale(0.9);
+    &  .backdrop__modal {
+      transform: translate(-50%, -50%) scale(0.9);
+      }
   }
   
   .backdrop__modal {
@@ -50,14 +49,13 @@
   background-color: var(--white-color);
   transition: fill 250ms var(--timing-function);
   cursor: pointer;
+    &:hover {
+      fill: var(--accent-color);
+      color: currentColor;
+      }
   }
   
-  .backdrop__close:hover {
-  fill: var(--accent-color);
-  color: currentColor;
-  }
-  
-  
+
   /* Форма в модальном окне */
   
   .form {
@@ -96,17 +94,16 @@
   border: 1px solid var(--border-form);
   border-radius: 4px;
   transition: border 250ms var(--timing-function);
-  }
-  
-  .form__input:hover,
-  .form__textarea:hover {
-  cursor: pointer;
-  }
-  
-  .form__input:focus,
-  .form__textarea:focus {
-  border: 1px solid var(--accent-color);
-  outline: none;
+    &:focus ~ .form__icon-wrap {
+      fill: var(--accent-color);
+      }
+    &:focus {
+      border: 1px solid var(--accent-color);
+      outline: none;
+      }
+    &:hover {
+      cursor: pointer;
+      }
   }
   
   .form__icon-wrap {
@@ -115,10 +112,6 @@
   left: 12px;
   transform: translate(0, 50%);
   transition: fill 250ms var(--timing-function);
-  }
-  
-  .form__input:focus ~ .form__icon-wrap {
-  fill: var(--accent-color);
   }
   
   .form__textarea {
@@ -134,12 +127,17 @@
   border-radius: 4px;
   resize: none;
   transition: border 250ms var(--timing-function);
+    &:focus {
+      border: 1px solid var(--accent-color);
+      outline: none;
+      }
+    &hover {
+      cursor: pointer;
+      }
+    &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+      }
   }
-  
-  .form__textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  }
-  
   
   .form__button {
     @extend %button

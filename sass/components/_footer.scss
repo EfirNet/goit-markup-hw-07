@@ -21,22 +21,22 @@
   .address__item:not(:last-child) {
   margin-bottom: 9px;
   }
-  
-  .address__link {
+
+    .address__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
   transition: color 250ms var(--timing-function);
+    &:focus,
+    &:hover {
+      color: var(--accent-color);
+      }
   }
   
-  .address__link:hover,
-  .address__link:focus {
-  color: var(--accent-color);
-  }
   
-  
+
   .social__title,
   .subscribe__title {
   margin-bottom: 20px;

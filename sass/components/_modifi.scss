@@ -3,20 +3,14 @@
 .subscribe__label--hidden,
 .feature__title--hidden,
 .form__privacy-input--hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-bottom: 0;
-padding: 0;
-clip: rect(0 0 0 0);
-overflow: hidden;
+  @extend %hidden;
 }
 
 .address__link--change-color {
-color: var(--footer-address-rgba)
+color: var(--footer-address-rgba);
 } 
 
 .address__link-map--change-color {
   color: var(--white-color);
+    
 }
