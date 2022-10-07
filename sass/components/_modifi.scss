@@ -6,11 +6,9 @@
   @extend %hidden;
 }
 
-.address__link--change-color {
-color: var(--footer-address-rgba);
-} 
 
-.address__link-map--change-color {
+ .address__link--change-color {
   color: var(--white-color);
-    
-}
+  } 
+
+
