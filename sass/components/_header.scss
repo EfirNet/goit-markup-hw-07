@@ -31,7 +31,7 @@
   display: flex;
   }
   
-  .nav__item + & {
+  .nav__item + .nav__item {
   margin-left: 50px;
   }
   
@@ -105,7 +105,7 @@
   display: flex; 
   }
   
-  .contacts__item + & {
+  .contacts__item + .contacts__item {
   margin-left: 50px; 
   }
   

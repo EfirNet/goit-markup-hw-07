@@ -140,7 +140,8 @@
   }
   
   .form__button {
-    @extend %button
+    @extend %button;
+    margin: 30px auto 0 auto;
   }
   
   .form__privacy-label {
