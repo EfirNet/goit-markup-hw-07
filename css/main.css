@@ -337,10 +337,14 @@ body {
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
-.nav__link::after:hover, .nav__link::after:focus {
+
+.nav__link:hover::after,
+.nav__link:focus::after {
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
+  /* width: 100%;
+  left: 0; */
 }
 
 .nav__link--current {
